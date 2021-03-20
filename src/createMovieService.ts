@@ -1,6 +1,6 @@
 import AWS from 'aws-sdk'
 
-const createDbService = (dynamoDBClient: AWS.DynamoDB) => {
+const createMovieService = (dynamoDBClient: AWS.DynamoDB) => {
   return {
     listTables: async () => {
       return await dynamoDBClient.listTables().promise()
@@ -8,4 +8,4 @@ const createDbService = (dynamoDBClient: AWS.DynamoDB) => {
   }
 }
 
-export default createDbService
+export default createMovieService

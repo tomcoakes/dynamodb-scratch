@@ -17,7 +17,7 @@ const setupDatabase = async () => {
     console.log('>>> creating table')
     dynamodb.createTable(
       {
-        TableName: 'Movies',
+        TableName: 'movies',
         AttributeDefinitions: [
           { AttributeName: 'title', AttributeType: 'S' },
           { AttributeName: 'year', AttributeType: 'N' },
